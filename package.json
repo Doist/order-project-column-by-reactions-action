@@ -1,0 +1,20 @@
+{
+    "name": "order-project-column-by-reactions-action",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Order a project's column by reactions.",
+    "repository": "https://github.com/Doist/order-project-column-by-reactions-action",
+    "prettier": "@doist/prettier-config",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@actions/core": "^1.6.0",
+        "@actions/github": "^5.0.0"
+    },
+    "devDependencies": {
+        "@doist/prettier-config": "^3.0.5",
+        "prettier": "^2.0.0"
+    }
+}

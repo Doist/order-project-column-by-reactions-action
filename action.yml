@@ -1,0 +1,35 @@
+name: 'order-project-column-by-reactions'
+description: |-
+    Order a project's column by reactions.
+inputs:
+    token:
+        required: true
+        description: |-
+            Auth token for the action to use
+    organization:
+        required: true
+        description: |-
+            Organization who owns the project
+    project_id:
+        required: true
+        description: |-
+            Project that contains the column
+    column_name:
+        required: true
+        description: |-
+            The name of the column to reorder
+    considered_user_logins:
+        required: false
+        description: |-
+            User logins of which to consider reactions
+
+            Consider all users if empty.
+    considered_reactions:
+        required: false
+        description: |-
+            Reactions to consider
+
+            Consider all reactions if empty. You can get the reaction names from the `ReactionContent` enum in [GitHub's GraphQL schema](https://docs.github.com/en/graphql/overview/public-schema).
+runs:
+    using: 'node12'
+    main: 'index.js'
