@@ -20,10 +20,10 @@ repos:
           - id: check-shebang-scripts-are-executable
 
     - repo: https://github.com/pre-commit/mirrors-prettier
-      rev: v2.6.0 # Should match additional_dependencies and package-lock.json
+      rev: v2.6.1 # Should match additional_dependencies and package-lock.json
       hooks:
           - id: prettier
             additional_dependencies:
                 # W/A: https://github.com/prettier/pre-commit/issues/16#issuecomment-713501862
-                - prettier@2.6.0 # Should match rev and package-lock.json
+                - prettier@2.6.1 # Should match rev and package-lock.json
                 - '@doist/prettier-config@3.0.5' # Should match package-lock.json
